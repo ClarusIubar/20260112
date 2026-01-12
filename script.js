@@ -24,6 +24,20 @@ function renderTodo(text){
     todoList.appendChild(li);
 }
 
+addBtn.onclick = function() {
+    const value = input.value.trim();
+    if (value !== ""){
+        renderTodo(value);
+        input.value = "";
+        input.focus();
+    }
+};
+
+function deleteTodo(btn){
+    const target = btn.parentElement.parentElement;
+    target.remove();
+}
+
 // old version
 // [2] Create : 추가 기능
 // addBtn.onclick = function(){
