@@ -2,8 +2,6 @@
 body { font-family: sans-serif; max-width: 400px; margin: 50px auto; }
 #input-section { display: flex; gap: 5px; margin-bottom: 20px; }
 input { flex-grow: 1; padding: 8px; }
-
-/* 리스트 아이템 디자인 */
 li { 
     display: flex; 
     justify-content: space-between; 
